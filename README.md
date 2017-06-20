@@ -42,6 +42,12 @@ git submodule update
 homechick link dotfiles
 ```
 
+## サーバ固有の設定
+
+* git
+
+各サーバ固有の設定は ~/.gitconfig.local に記述すること
+
 ## 参考
 * [Homeshickでdotfilesを管理することにした](http://befool.co.jp/blog/jiska/homeshick-git-dotfile-synchronizer/)
 * [Homeshick Wiki](https://github.com/andsens/homeshick/wiki)
