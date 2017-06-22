@@ -20,4 +20,4 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 ## ---   ここまで
 
 ## fish を起動する。 bash を起動したい場合には、 bash --norc を実行すること
-exec fish
+# exec fish

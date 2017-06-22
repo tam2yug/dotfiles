@@ -8,24 +8,24 @@ dotfiles の管理には [homeshick](https://github.com/andsens/homeshick) を�
 
 ## 使い方
 
+### リポジトリの clone
 ```
 git clone https://github.com/andsens/homeshick.git ~/.homesick/repos/homeshick
 git clone https://github.com/tam2yug/dotfiles.git ~/.homesick/repos/dotfiles
 ```
 
-### シェルの設定
+### homeshickの読込
 
 * bash の場合
 ```
-printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
-printf '\nsource "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"' >> $HOME/.bashrc
-source ~/.bashrc
+source ~/.homesick/repos/homeshick/homeshick.sh
+source ~/.homesick/repos/homeshick/completions/homeshick-completion.bash
 ```
 
 * fish の場合
 ```
-echo -en '\n. "$HOME/.homesick/repos/homeshick/homeshick.fish"' >> "$HOME/.config/fish/config.fish"
-echo -en '\n. "$HOME/.homesick/repos/homeshick/completions/homeshick.fish"' >> "$HOME/.config/fish/config.fish"
+. ~/.homesick/repos/homeshick/homeshick.fish
+. ~/.homesick/repos/homeshick/completions/homeshick.fish
 ```
 
 ### サブモジュールがあるときは
@@ -39,7 +39,7 @@ git submodule update
 ### シンボリックリンクの作成
 
 ```
-homechick link dotfiles
+homeshick link dotfiles
 ```
 
 ## サーバ固有の設定
